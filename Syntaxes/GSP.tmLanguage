@@ -26,6 +26,14 @@
 	<array>
 		<dict>
 			<key>begin</key>
+			<string>&lt;%--+(?!&gt;)=?</string>
+			<key>contentName</key>
+			<string>comment.block</string>
+			<key>end</key>
+			<string>--%&gt;</string>
+		</dict>
+		<dict>
+			<key>begin</key>
 			<string>&lt;%+(?!&gt;)=?</string>
 			<key>beginCaptures</key>
 			<dict>
