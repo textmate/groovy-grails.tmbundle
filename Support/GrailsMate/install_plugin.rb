@@ -2,7 +2,7 @@ gc = GrailsCommand.new("install-plugin") do |default|
   TextMate::UI.request_string( 
     :title => "Install Grails Plug-in",
     :prompt => "Enter the Plug-in name",
-    :default => ""
+    :default => default
   )
 end
 
