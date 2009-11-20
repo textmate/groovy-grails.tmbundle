@@ -91,6 +91,7 @@ class GrailsCommand
       unless @option_getter.nil?
         last_value = self.class.get_last_option_pref(@task)
         option = @option_getter[last_value]
+        return nil if option.nil?
         self.class.set_last_option_pref(@task, option)
       end
       @command = construct_command(@task, option)
