@@ -3,7 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>		
+	<string>package ${1}
+		
 import grails.test.*
 		
 class ${2:Name}Tests extends GrailsUnitTestCase {

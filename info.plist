@@ -28,11 +28,12 @@
 			<dict>
 				<key>items</key>
 				<array>
-					<string>96BADBF6-D3F2-494E-B65F-3B4078DDF8C7</string>
-					<string>75FFE634-ECF7-4FFB-9A22-2D88C8166722</string>
+					<string>5E358AE7-2B58-4B13-B5DE-13834E7951B3</string>
 					<string>EAED6F03-BBDF-43CE-9536-C965EA21840B</string>
 					<string>927DB595-92AE-4E2B-9CAA-7F270CD21032</string>
-					<string>5E358AE7-2B58-4B13-B5DE-13834E7951B3</string>
+					<string>96BADBF6-D3F2-494E-B65F-3B4078DDF8C7</string>
+					<string>75FFE634-ECF7-4FFB-9A22-2D88C8166722</string>
+					<string>60D7E667-547A-4057-8960-10EF89CBFB85</string>
 				</array>
 				<key>name</key>
 				<string>Testing</string>
@@ -307,6 +308,11 @@
 		<string>A085D123-3C2B-4960-AC5B-0D576FE55F49</string>
 		<string>69E74F74-6AEC-43A3-9F82-580CD17DE40B</string>
 		<string>96BADBF6-D3F2-494E-B65F-3B4078DDF8C7</string>
+		<string>5E358AE7-2B58-4B13-B5DE-13834E7951B3</string>
+		<string>EAED6F03-BBDF-43CE-9536-C965EA21840B</string>
+		<string>927DB595-92AE-4E2B-9CAA-7F270CD21032</string>
+		<string>75FFE634-ECF7-4FFB-9A22-2D88C8166722</string>
+		<string>60D7E667-547A-4057-8960-10EF89CBFB85</string>
 	</array>
 	<key>uuid</key>
 	<string>2536CAAD-FADB-4C08-B950-A7FAAD24A738</string>

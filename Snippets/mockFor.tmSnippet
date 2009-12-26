@@ -4,9 +4,10 @@
 <dict>
 	<key>content</key>
 	<string>def ${1:mockControl} = mockFor(${2:ClassName})
-${1}.demand.${3:getProperty}(1..1) = {-&gt;
+${1}.demand.${3:yourMethod}(${4:1}..${5:1}) = {-&amp;gt;
 	$0
-}</string>
+}
+def test${2} = ${1}.createMock()</string>
 	<key>name</key>
 	<string>mockFor</string>
 	<key>scope</key>

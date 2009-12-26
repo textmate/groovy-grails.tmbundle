@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>mockDomain(${1:DomainClass}, [
 	new ${1}($0)
-]</string>
+])</string>
 	<key>name</key>
 	<string>mockDomain</string>
 	<key>scope</key>
