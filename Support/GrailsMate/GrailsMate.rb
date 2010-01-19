@@ -3,6 +3,8 @@ require "#{ENV["TM_SUPPORT_PATH"]}/lib/ui"
 require "#{ENV["TM_SUPPORT_PATH"]}/lib/tm/process"
 require "#{ENV["TM_SUPPORT_PATH"]}/lib/tm/htmloutput"
 
+require ENV['TM_BUNDLE_SUPPORT'] + '/lib/grails/application'
+
 require "shellwords"
 require "pstore"
 
@@ -10,8 +12,11 @@ class GrailsCommand
   
   attr_reader :colorisations
 
+
   @@location = ENV['TM_PROJECT_DIRECTORY'] || ENV['TM_DIRECTORY']
   @@prefs = PStore.new(File.expand_path( "~/Library/Preferences/com.macromates.textmate.grailsmate"))
+
+  @application = Grails::Application.new(@@location)
   
   def self.prefs(&t)
     @@prefs.transaction do |p|
