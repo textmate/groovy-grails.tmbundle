@@ -35,7 +35,7 @@ module Grails
     end
     
     def is_pre_1_2
-      version[0] == 0 or (version[0] == 1 and version =~ /^1\.1/) 
+      grails_version[0] == 0 or (grails_version[0] == 1 and grails_version =~ /^1\.1/) 
     end
 
     def test_reports_dir
@@ -44,7 +44,7 @@ module Grails
 
     def find_test_report(test_class_name)
       matches = []
-      Find.find(test_reports_dir) do |path|
+      Find.find("#{test_reports_dir}/plain") do |path|
         if File.basename(path) =~ /#{Regexp.escape(test_class_name)}\.txt$/
           matches << path
         end
