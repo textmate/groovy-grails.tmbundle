@@ -16,7 +16,7 @@ ARGV.each do |t|
   potential_phases.each do |dir, potential_phase|
     phases << "--#{potential_phase}" if t =~ /test\/#{dir}\//
   end
-  testclasses << clazz.sub(/Tests$/, "")
+  testclasses << clazz.sub(/Tests|Spec|Specification$/, "")
 end
 
 GrailsCommand.new("test-app #{testclasses.uniq.join(' ')} #{phases.uniq.join(' ')}").run
