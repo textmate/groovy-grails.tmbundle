@@ -1,11 +1,13 @@
+require "find"
+
 module Grails
   
   class Application
     
     attr_reader :path 
     
-    def initialize(path)
-      @path = path
+    def initialize(path = nil)
+      @path = path || ENV['TM_PROJECT_DIRECTORY']
     end
   
     def properties
@@ -32,6 +34,24 @@ module Grails
       end
     end
     
+    def is_pre_1_2
+      version[0] == 0 or (version[0] == 1 and version =~ /^1\.1/) 
+    end
+
+    def test_reports_dir
+      is_pre_1_2 ? "#{@path}/test/reports" : "#{@path}/target/test-reports"
+    end
+
+    def find_test_report(test_class_name)
+      matches = []
+      Find.find(test_reports_dir) do |path|
+        if File.basename(path) =~ /#{Regexp.escape(test_class_name)}\.txt$/
+          matches << path
+        end
+      end
+      matches.first # we eventually need something more sophisticated here
+    end  
+    
     protected
     
     def read_properties
@@ -45,7 +65,6 @@ module Grails
       end
       p
     end
-      
-  end
-  
+    
+  end  
 end

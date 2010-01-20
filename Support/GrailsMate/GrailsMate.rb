@@ -133,7 +133,7 @@ class GrailsCommand
               end
             end
             line = (match ? match : "#{htmlize line}<br/>")
-            line.sub!(/(Running test )(\S+)(\.\.\.)/, "\\1<a href='txmt://open?url=file://#{@@location}/test/reports/plain/TEST-\\2.txt'>\\2</a>\\3")
+            line.sub!(/(Running test )(\S+)(\.\.\.)/, "\\1<a href=\"javascript:TextMate.system('\\\\'#{ENV['TM_BUNDLE_SUPPORT']}/bin/find_test_report.rb\\\\' \\\\'\\2\\\\'')\">\\2</a>\\3")
             line.sub!(/(Browse to )([^\<]+)/, "\\1<a href=\"javascript:TextMate.system('open \\\\'\\2\\\\'')\">\\2</a>")
             line.sub!(/(view reports in )(.+)(\.)/, "\\0 <br /><br /><input type='submit' name='open_test_report' value='Open HTML Report' onclick=\"TextMate.system('open \\\\'\\2/html/index.html\\\\'')\"/>")
             io << line
