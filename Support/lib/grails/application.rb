@@ -35,7 +35,7 @@ module Grails
     end
     
     def is_pre_1_2
-      grails_version[0] == 0 or (grails_version[0] == 1 and grails_version =~ /^1\.1/) 
+      grails_version[0,1] == '0' or (grails_version[0,1] == '1' and grails_version =~ /^1\.1.*/) 
     end
 
     def test_reports_dir
