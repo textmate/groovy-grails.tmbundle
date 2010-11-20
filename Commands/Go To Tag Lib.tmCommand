@@ -6,7 +6,7 @@
 	<string>saveActiveFile</string>
 	<key>command</key>
 	<string>RUBYLIB="$TM_BUNDLE_SUPPORT/lib:$RUBYLIB"
-"${TM_RUBY:=ruby}" -- "${TM_BUNDLE_SUPPORT}/bin/go_to_alternate_file.rb" taglib</string>
+ruby -- "${TM_BUNDLE_SUPPORT}/bin/go_to_alternate_file.rb" taglib</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
