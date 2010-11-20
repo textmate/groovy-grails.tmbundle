@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>autoScrollOutput</key>
+	<key>autoScrollOutput</key>
 	<true/>
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
@@ -17,7 +17,7 @@
 	<key>output</key>
 	<string>showAsHTML</string>
 	<key>scope</key>
-	<string>source.groovy, source.java, source.java-props, text.xml, text.html.grails</string>
+	<string>source.groovy, source.java, source.java-props, text.xml, text.html.grails, text.html.textile</string>
 	<key>uuid</key>
 	<string>FD3BEFAC-5C8C-4D03-9DF1-A07EB8B79807</string>
 </dict>

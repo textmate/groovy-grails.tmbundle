@@ -22,7 +22,7 @@ fi</string>
 	<key>output</key>
 	<string>showAsHTML</string>
 	<key>scope</key>
-	<string>source.groovy, source.java, source.java-props, text.xml, text.html.grails</string>
+	<string>source.groovy, source.java, source.java-props, text.xml, text.html.grails, text.html.textile</string>
 	<key>uuid</key>
 	<string>2922A132-7A49-4193-B959-D30D817160B5</string>
 </dict>

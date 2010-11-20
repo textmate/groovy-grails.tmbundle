@@ -17,7 +17,7 @@
 	<key>output</key>
 	<string>showAsHTML</string>
 	<key>scope</key>
-	<string>source.groovy, source.java, source.java-props, text.xml, text.html.grails</string>
+	<string>source.groovy, source.java, source.java-props, text.xml, text.html.grails, text.html.textile</string>
 	<key>uuid</key>
 	<string>81EFF7DA-D8FD-49D3-AD14-285E135CAA9D</string>
 </dict>
